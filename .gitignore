@@ -1,0 +1,31 @@
+# Competition datasets — NOT redistributable (competition rules)
+*/data/
+*/dataset/
+*.csv
+*.parquet
+*.zip
+
+# Images / masks
+*.jpg
+*.jpeg
+*.png
+*.tif
+
+# Model weights / embeddings caches / large binaries
+*.pth
+*.pt
+*.pkl
+*.h5
+*.npy
+*.npz
+
+# Jupyter / Python
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Secrets
+.env
+.env.*
