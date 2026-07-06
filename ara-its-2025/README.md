@@ -9,6 +9,13 @@
 
 ---
 
+## The story
+Pothole detection sounds trivial until you look at the images: ragged edges, potholes that are a sliver of
+the frame, and road surface and lighting that change shot to shot. A model that memorizes clean training
+conditions collapses on the leaderboard. My lever wasn't a fancier architecture — it was making the model
+see the hard cases more often (**low-confidence oversampling**) and weighting the loss toward the **edges**
+that actually decide the Dice score.
+
 ## Problem
 
 Given road-surface photos, predict a **binary mask** of pothole regions (RLE-encoded submission). Potholes

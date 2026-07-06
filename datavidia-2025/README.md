@@ -9,6 +9,12 @@
 
 ---
 
+## The story
+The catch wasn't the classifier — it was the holes in the data. Air-quality readings arrived with missing
+date×station combinations, so a naive model would learn from a Swiss-cheese signal. The move that mattered
+was **reconstructing a complete spatio-temporal grid** and interpolating the gaps first, so the model saw a
+continuous picture instead of fragments.
+
 ## Problem
 
 Predict the air-quality category from pollutant readings (PM10, PM2.5, SO₂, CO, O₃, NO₂) across stations

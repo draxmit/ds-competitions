@@ -9,6 +9,12 @@
 
 ---
 
+## The story
+The data was Indonesian court decisions — scanned, OCR'd, and noisy — and the target was how many months a
+sentence would run. Before any model could help, the text had to be made *trustworthy*: repairing OCR
+garble, normalizing legalese, masking residual PII. The modeling (fusing IndoBERT with TF-IDF into one
+feature space) was the easy half; turning messy legal reality into something learnable was the real work.
+
 ## Problem
 
 From the full text of a court decision (OCR'd, noisy, in Bahasa Indonesia), predict the **sentence length
